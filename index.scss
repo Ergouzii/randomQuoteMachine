@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+$main-color: #cfad87;
+
+body {
+    background-color: $main-color;
+    font-weight: 400;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#quote-box {
+    padding: 10px 20px;
+    width: 50rem;
+    border-radius: 10px;
+    color: $main-color;
+
+    .quote {
+        font-family: 'Abril Fatface', cursive;
+
+        #text {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+    
+        #author {
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    button {
+        color: white;
+        background-color: $main-color;
+    }
+  
+    #tweet-quote {
+        color: white;
+        background-color: $main-color;
+    }
+
+    button:hover {
+        box-shadow: 0 2px 8px 3px rgba(0,0,0,0.15);
+    }
+}
+
+footer {
+    color: white;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 10px;
+    }
+}
